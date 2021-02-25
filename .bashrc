@@ -127,6 +127,9 @@ alias p="git push"
 alias setupstream="git push --set-upstream origin master"
 alias s="npm run start"
 alias dev="npm run dev"
-alias c="git commit -m $@ && git push" 
+c(){
+	git commit -m "$@" 
+	git push
+} 
 alias amend="git commit --amend"
 alias pf="git push --force"
